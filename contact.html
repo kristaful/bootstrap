@@ -15,9 +15,11 @@
 </head>
 <body>
   <header>
+    <!-- Access styles for navbar and list items -->
+    <div class="shadow p-3 mb-5 bg-body rounded">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Kailua Kove Bed & Breakfast</a>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive2" src="images/hibiscus.png" alt="">Kailua Kove Bed & Breakfast</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,20 +32,23 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Nearby Attractions</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
             </li>
           </ul>
+          </div>
         </div>
-      </div>
     </nav>
+    </div>
   </header>
-<div class="container">
+
+<!-- Access styles for body container, form, and embedded map -->
+  <div class="container shadow p-3 mb-5 bg-body rounded">
   <h1>Contact Us</h1>
   <p>For booking &/or reservation requests, please email us & provide the number of nights you wish to stay & your check out day & date along with any questions you may have. Phone numbers are requested in case of any email address errors for us to be able to reply promptly to you.</p>
-
+  <div class="d-flex justify-content-center flex-wrap">
   <form class="row g-3">
     <div class="input-group">
       <span class="input-group-text">First and Last Name</span>
@@ -62,6 +67,7 @@
       <label for="floatingInputGrid">Email address</label>
     </div>
     </div>
+  </div>
     <div class="col-md">
     <div class="form-floating">
       <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
@@ -80,7 +86,6 @@
     </div>
     </div>
     </div>
-    </div>
 
     <div class="col-12">
       <div class="form-check">
@@ -91,29 +96,31 @@
       </div>
     </div>
     <div class="input-group">
-  <span class="input-group-text">Any Questions?</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
+      <span class="input-group-text">Leave any questions or extra details here: </span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </form>
 
-
-  <iframe
-width="600"
-height="450"
-style="border:0"
-loading="lazy"
-allowfullscreen
-src="https://goo.gl/maps/yk8cgFm1WP85uvV67">
-</iframe>
-</div>
-
+<!-- Access styles for cards for embedded map for unified look -->
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Aloha!</h5>
+            <p class="card-text">Click below for an interactive map to the beautiful Kailua Kove B&B!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.185087411385!2d-157.74923348506073!3d21.421968785786643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0015399eb53f0b%3A0xf8b93ccbb6bb3ebe!2s804%20Mokapu%20Rd%2C%20Kailua%2C%20HI%2096734!5e0!3m2!1sen!2sus!4v1627248622650!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Access styles for footer and icons -->
 <footer class="bd-footer py-5 mt-5 bg-light">
   <div class="shadow p-3 mb-5 bg-body rounded">
     <div class="container py-5">
-      <div class="row">
+      <div class="row d-flex justify-content-center text-center">
         <div class="col-lg-3 mb-3">
           <i class="fas fa-map-pin"></i>  <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="contact.html"> 804 Mokapu Road Kailua, HI 96734</a>
         </div>
@@ -127,7 +134,7 @@ src="https://goo.gl/maps/yk8cgFm1WP85uvV67">
     </div>
   </div>
 </footer>
-
+<!-- Access links for JS and queries -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
